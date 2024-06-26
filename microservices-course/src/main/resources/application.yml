@@ -1,0 +1,25 @@
+
+spring:
+  application:
+    name: msvc-course
+  config:
+    import: optional:configserver:http://localhost8888
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://localhost:5432/courseDB
+    username: postgre
+    password: UltraMusic2020
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 9090
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
