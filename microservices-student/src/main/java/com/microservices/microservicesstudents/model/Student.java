@@ -1,4 +1,4 @@
-package model;
+package com.microservices.microservicesstudents.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

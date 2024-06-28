@@ -1,7 +1,7 @@
-package service.impl;
+package com.microservices.microservicesstudents.service.impl;
 
-import repository.IGenericRepo;
-import service.ICrud;
+import com.microservices.microservicesstudents.repository.IGenericRepo;
+import com.microservices.microservicesstudents.service.ICrud;
 
 import java.util.List;
 

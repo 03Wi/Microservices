@@ -19,7 +19,7 @@ public interface IControllerGeneric <T, ID>{
     ResponseEntity<T> save(T t);
 
     @DeleteMapping
-    ResponseEntity<T> deleteById(ID id);
+    ResponseEntity<Void> deleteById(ID id);
 
 
 }

@@ -11,17 +11,17 @@ public abstract class CrudImpl <T, ID> implements ICrud<T, ID> {
 
     @Override
     public List<T> findAll() {
-        return List.of();
+        return getRepo().findAll();
     }
 
     @Override
     public T findById(ID id) {
-        return null;
+        return getRepo().findById(id).orElseThrow();
     }
 
     @Override
     public T save(T t) {
-        return null;
+        return getRepo().save(t);
     }
 
     @Override

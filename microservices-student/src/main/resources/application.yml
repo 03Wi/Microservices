@@ -3,10 +3,10 @@ spring:
   application:
     name: msvc-student
   config:
-    import: optional:configserver:http://localhost8888
+    import: optional:configserver:http://localhost:8888
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/studentDB
+    url: jdbc:mysql://localhost:3306/studentbd
     username: root
     password: UltraMusic2020
   jpa:

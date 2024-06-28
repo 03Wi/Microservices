@@ -1,4 +1,4 @@
-package service;
+package com.microservices.microservicesstudents.service;
 
 import java.util.List;
 
