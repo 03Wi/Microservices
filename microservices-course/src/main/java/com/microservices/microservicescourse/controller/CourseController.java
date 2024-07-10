@@ -21,7 +21,7 @@ public class CourseController implements IControllerGeneric<Course, Long>{
 
     @GetMapping("/find/{idCourse}")
     public ResponseEntity<StudentByCourseResponse> findAllStudentByCourse(@PathVariable Long idCourse) {
-        return new ResponseEntity<>(repo.findByAllStudentByCourse(idCourse), HttpStatus.OK);
+        return new ResponseEgit ntity<>(repo.findByAllStudentByCourse(idCourse), HttpStatus.OK);
     }
 
     @Override
