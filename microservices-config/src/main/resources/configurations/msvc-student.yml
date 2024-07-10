@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: msvc-student
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/studentbd
+    username: root
+    password: UltraMusic2020
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+server:
+  port: 8090
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
